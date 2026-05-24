@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret For Mehak ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+transition:1s;
+position:relative;
+}
+
+.stars{
+position:absolute;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+.star{
+position:absolute;
+width:3px;
+height:3px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:.2;}
+to{opacity:1;}
+}
+
+.container{
+width:90%;
+max-width:760px;
+position:relative;
+z-index:2;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.15);
+backdrop-filter:blur(18px);
+padding:50px 35px;
+border-radius:35px;
+text-align:center;
+color:white;
+box-shadow:0 0 40px rgba(255,255,255,0.08);
+animation:fade 1s ease;
+position:relative;
+overflow:hidden;
+}
+
+.card::before{
+content:'';
+position:absolute;
+width:200px;
+height:200px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+top:-70px;
+right:-70px;
+}
+
+.card::after{
+content:'';
+position:absolute;
+width:160px;
+height:160px;
+background:rgba(255,255,255,0.05);
+border-radius:50%;
+bottom:-60px;
+left:-60px;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:4rem;
+margin-bottom:20px;
+color:#ffd4e5;
+text-shadow:0 0 15px rgba(255,255,255,0.5);
+}
+
+p{
+font-size:1.15rem;
+line-height:2;
+color:#f3f3f3;
+}
+
+button{
+margin-top:35px;
+padding:16px 42px;
+border:none;
+border-radius:50px;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+background:linear-gradient(45deg,#ff4b91,#ff9a9e);
+color:white;
+transition:.4s;
+box-shadow:0 0 25px rgba(255,105,180,.4);
+}
+
+button:hover{
+transform:scale(1.08);
+letter-spacing:1px;
+box-shadow:0 0 35px rgba(255,105,180,.8);
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+color:#ff8dc7;
+animation:float 8s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh) scale(0);
+opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+transform:translateY(-10vh) scale(1.5);
+opacity:0;
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.glow{
+color:#ffd4e5;
+font-weight:600;
+text-shadow:0 0 12px rgba(255,255,255,.7);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="container">
+<div class="card">
+
+<h1 id="title">A Tiny Secret ❤️</h1>
+
+<p id="text">
+Someone is hiding feelings inside this little heart...
+</p>
+
+<button id="btn" onclick="nextStep()">
+Touch The Heart 💌
+</button>
+
+</div>
+</div>
+
+<script>
+
+const steps = [
+
+{
+title:"Hmm... Curious? 👀",
+text:"Mehak... itni jaldi kya hai 😌<br><br>Pehle yeh batao... agar kisi ko Ap ki smile sy addiction ho jaye to us ka kya kasoor? ❤️",
+bg:"linear-gradient(135deg,#141e30,#243b55)",
+btn:"Continue Slowly 🌙"
+},
+
+{
+title:"Not So Fast 😏",
+text:"Abhi sirf beginning hai...<br><br>Real secret to abhi baki hai ✨<br><br>Waise Ap ki aankhen bohat dangerous hain... banda un me kho jata hai 🥺",
+bg:"linear-gradient(135deg,#41295a,#2F0743)",
+btn:"Show Me More 💖"
+},
+
+{
+title:"Heart Beat Increasing 💓",
+text:"Har baar jab Ap online aati hain... dil unnecessary fast dhadakne lagta hai 😭❤️",
+bg:"linear-gradient(135deg,#ff512f,#dd2476)",
+btn:"Next Secret 😳"
+},
+
+{
+title:"Acha Ab Sach Suno 🌸",
+text:"Ap ki baatein itni soft hain k gussa bhi Ap sy pyar me badal jata hai ✨<br><br>Ap ka naam sun kar bhi smile aa jati hai ❤️",
+bg:"linear-gradient(135deg,#8360c3,#2ebf91)",
+btn:"Still More? 👀"
+},
+
+{
+title:"Warning ⚠️",
+text:"Agle click k baad feelings zyada romantic ho sakti hain 😶❤️<br><br>Proceed at your own risk 💌",
+bg:"linear-gradient(135deg,#ee0979,#ff6a00)",
+btn:"I Can Handle It 😌"
+},
+
+{
+title:"Mehak... 🥺❤️",
+text:"Ap ka chehra chand sy zyada khoobsurat lagta hai ✨<br><br>Ap ki aankhen sukoon hain...<br>Ap ki smile meri weakness hai...<br>Ap ki awaaz dil ko chain deti hai 💖<br><br>Aur honestly...<br><span class='glow'>I Love You So Much ❤️</span>",
+bg:"linear-gradient(135deg,#fc466b,#3f5efb)",
+btn:"Forever Yours 💍"
+}
+
+];
+
+let current = 0;
+
+function nextStep(){
+
+document.body.style.background = steps[current].bg;
+
+document.getElementById("title").innerHTML = steps[current].title;
+
+document.getElementById("text").innerHTML = steps[current].text;
+
+document.getElementById("btn").innerHTML = steps[current].btn;
+
+current++;
+
+if(current >= steps.length){
+current = steps.length - 1;
+}
+
+}
+
+function createHearts(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(Math.random()*25+15)+"px";
+
+heart.style.animationDuration=(Math.random()*4+4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHearts,300);
+
+function createStars(){
+
+const stars=document.getElementById("stars");
+
+for(let i=0;i<120;i++){
+
+const star=document.createElement("div");
+
+star.classList.add("star");
+
+star.style.top=Math.random()*100+"%";
+
+star.style.left=Math.random()*100+"%";
+
+star.style.animationDuration=(Math.random()*3+2)+"s";
+
+stars.appendChild(star);
+
+}
+
+}
+
+createStars();
+
+</script>
+
+</body>
+</html>
